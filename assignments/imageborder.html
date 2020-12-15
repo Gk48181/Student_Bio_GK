@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.10: imageborder.html -->
+<!-- Image border in CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Image Border</title>
+      <style type = "text/css">
+         div
+         {
+            border-width: 30px;
+            width: 234px;
+            padding: 20px 20px;
+         }
+         #stretch
+         {
+            -webkit-border-image: url(../images/border.png) 80 80 80 80 stretch;
+            -moz-border-image: url(../images/border.png) 80 80 80 80 stretch; 
+            -o-border-image: url(../images/border.png) 80 80 80 80 stretch; 
+            border-image: url(../images/border.png) 80 80 80 80 stretch;
+         }
+         #repeat
+         {
+            -webkit-border-image: url(../images/border.png) 34% 34% repeat;
+            -moz-border-image: url(../images/border.png) 34% 34% repeat; 
+            -o-border-image: url(../images/border.png) 34% 34% repeat; 
+            border-image: url(../images/border.png) 34% 34% repeat;
+         }
+      </style>
+   </head>
+   <body>
+      <h2>Image Borders</h2>
+      <img src = "../images/border.png" alt = "image used to demonstrate borders">
+      <p><div id = "stretch">Stretching the image border</div></p>
+      <p><div id = "repeat">Repeating the image border</div></p><a href="../assignments.html">Go Back</a>
+   </body>
+</html>
+
